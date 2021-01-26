@@ -84,7 +84,8 @@ So that you should run this application, follow the instructions below:
    ```
 2. Install NPM packages
    ```sh
-   npm install
+   npm install @material-ui/core
+   npm install @material-ui/icons
    ```
 
 <!-- USAGE EXAMPLES -->
