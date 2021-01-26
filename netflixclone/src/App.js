@@ -21,11 +21,10 @@ export default () => {
 
             //Geting Featured
             const originals = list.filter(i=>i.slug === 'originals');
-
             const randomChosen = Math.floor(Math.random()*(originals[0].items.results.length - 1));
             const chosen = originals[0].items.results[randomChosen];
-
-            console.log(chosen);
+            const chosenInfo = await Tmdb.getMovieInfo(chosen.id, 'tv');
+            setFeaturedData(chosenInfo);
         }
 
         loadAll();
